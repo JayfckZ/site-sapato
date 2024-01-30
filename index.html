@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>SHOE BIZ</h1>
+            <ul>
+                <li><a href="#sobre">Sobre a loja</a></li>
+                <li><a href="#produtos">Produtos</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <div class="container">
+        <section id="sobre">
+                <div id="img">
+                    <img src="image/store.jpg" alt="Nossa loja">
+                </div>
+                <div>
+                    <h2>Sobre a loja</h2>
+                    <p>
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ab, assumenda eius. Tenetur harum facilis a, vitae voluptatem, vero accusamus nostrum repellat culpa id quae, temporibus eveniet cum deleniti sequi corporis!
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda consectetur ex, iure aperiam quis voluptatum accusamus. Repellat itaque, magni dolore, corporis rerum voluptas nisi blanditiis, officia esse aperiam tenetur sint!
+                    </p>
+                </div>
+        </section>
+    
+        <section id="produtos">
+                <h2>Produtos</h2>
+                <div class="produtos">
+                    
+                        <article class="tenis">
+                            <img src="image/nike1.jpg" alt="Tênis Nike">
+                            <h3>Tênis Nike</h3>
+                            <p>
+                                Tênis Nike Preto, disponível nos tamanhos: 37 - 41
+                            </p>
+                            <button type="button">Adicionar ao carrinho</button>
+                        </article>
+                    
+                    
+                        <article class="tenis">
+                            <img src="image/nike2.jpg" alt="Tênis Nike">
+                            <h3>Tênis Nike</h3>
+                            <p>
+                                Tênis Nike Branco, disponível nos tamanhos: 37 - 41
+                            </p>
+                            <button type="button">Adicionar ao carrinho</button>
+                        </article>
+                    
+                    
+                        <article class="tenis">
+                            <img src="image/adidas1.jpg" alt="Tênis Adidas">
+                            <h3>Tênis Adidas</h3>
+                            <p>
+                                Tênis Adidas Branco, disponível nos tamanhos: 37 - 41
+                            </p>
+                            <button type="button">Adicionar ao carrinho</button>
+                        </article>
+                    
+                        <article class="tenis">
+                            <img src="image/adidas2.jpg" alt="Tênis Adidas">
+                            <h3>Tênis Adidas</h3>
+                            <p>
+                                Tênis Adidas Preto, disponível nos tamanhos: 37 - 41
+                            </p>
+                            <button type="button">Adicionar ao carrinho</button>
+                        </article>
+                    
+                    
+                        <article class="tenis">
+                            <img src="image/vans1.jpg" alt="Tênis Vans">
+                            <h3>Tênis Vans</h3>
+                            <p>
+                                Tênis Vans Azul, disponível nos tamanhos: 37 - 41
+                            </p>
+                            <button type="button">Adicionar ao carrinho</button>
+                        </article>
+                    
+                    
+                        <article class="tenis">
+                                <img src="image/vans2.jpg" alt="Tênis Vans">
+                                <h3>Tênis Vans</h3>
+                                <p>
+                                    Tênis Vans Preto, disponível nos tamanhos: 37 - 41
+                                </p>
+                            <button class="carrinho" type="button">Adicionar ao carrinho</button>
+                        </article>
+                    </div>
+                
+    
+        </section>
+    </div>
+
+    <footer>
+        <div class="container">
+            Shoe-Biz &copy; 2024 - Todos os direitos reservados
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script>
+        $(document).ready(function(){
+            $('button').click(function(){
+                $(this).toggleClass('carrinho')
+
+                if ($(this).hasClass('carrinho')) {
+                $(this).text('Remover do carrinho');
+                } else {
+                    $(this).text('Adicionar ao carrinho');
+                }
+                console.log('Adicinado')
+            })
+        })
+    </script>
+</body>
+</html>

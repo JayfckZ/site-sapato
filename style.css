@@ -1,0 +1,226 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Roboto, sans-serif;
+}
+
+body{
+    background-color: rgb(255, 242, 221);
+}
+
+.container{
+    max-width: 1024px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+h2{
+    color: rgb(172, 97, 0);
+    border-bottom: 3px solid rgb(172, 97, 0);
+    font-size: 2em;
+}
+
+header{
+    background-color: rgb(0, 0, 0);
+    color: white;
+    padding: 18px;
+    border-bottom: 4px solid rgb(172, 97, 0);
+}
+
+header .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header ul{
+    display: flex;
+}
+
+header li{
+    list-style: none;
+    margin-left: 20px;
+}
+
+header li a{
+    text-decoration: none;
+    color: white;
+}
+
+#sobre{
+    margin-top: 58px;
+    display: flex;
+}
+
+#sobre img{
+    width: 320px;
+    margin-right: 60px;
+}
+
+#sobre p{
+    margin-top: 30px;
+    font-size: 1.1em;
+}
+
+#produtos{
+    margin-top: 58px;
+}
+
+#produtos h2{
+    margin-bottom: 36px;
+}
+
+.produtos{
+    display: grid;
+    grid-template-columns: repeat(4, 24.25%);
+    column-gap: 1%;
+    row-gap: 5%;
+}
+
+.tenis p{
+    font-size: small;
+    padding: 8px;
+}
+
+.tenis img{
+    width: 100%;
+    margin-bottom: 5px;
+}
+
+.tenis button{
+    width: 100%;
+    background-color: rgb(172, 97, 0);
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+    border: 2px solid transparent;
+    padding: 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 16px;
+}
+
+.tenis .carrinho{
+    border: 2px solid rgb(172, 97, 0);
+    background-color: white;
+    color: rgb(172, 97, 0);
+}
+
+.tenis button:hover{
+    background-color: rgb(133, 75, 0);
+}
+.tenis .carrinho:hover{
+    background-color: rgba(172, 97, 0, 0.5);
+}
+
+footer{
+    background-color: rgb(0, 0, 0);
+    border-top: 4px solid rgb(172, 97, 0);
+    color: white;
+    font-size: small;
+    padding: 16px;
+    text-align: center;
+    margin-top: 56px;
+}
+
+@media screen and (max-width: 640px){
+    .container{
+        max-width: 90%;
+    }
+
+    header .container{
+        flex-direction: column;
+    }
+
+    header li{
+        display: none;
+    }
+
+
+    #sobre{
+        margin-top: 58px;
+        display: block;
+    }
+    
+    #sobre img{
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 16px;
+    }
+    
+    #sobre p{
+        font-size: 1em;
+    }
+
+    .produtos{
+        display: grid;
+        grid-template-columns: 100%;
+        row-gap: 1%;
+    }
+
+    .tenis button:hover{
+        background-color: rgb(172, 97, 0);
+    }
+    .tenis .carrinho:hover{
+        background-color: white;
+    }
+
+    footer{
+        margin-top: 256px;
+    }
+}
+
+@media screen and (min-width: 641px) and (max-width: 1023px){
+    .container{
+        max-width: 90%;
+    }
+
+    #sobre{
+        margin-top: 58px;
+        display: block;
+    }
+    
+    #sobre #img{
+        max-width: 850px;
+        margin: 0 auto;
+    }
+    #sobre img{
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 16px;
+    }
+
+    #sobre p{
+        font-size: 2em;
+    }
+
+    .tenis button:hover{
+        background-color: rgb(172, 97, 0);
+    }
+    .tenis .carrinho:hover{
+        background-color: white;
+    }
+
+    .produtos{
+        display: grid;
+        grid-template-columns: 49% 49%;
+        column-gap: 2%;
+        row-gap: 3%;
+    }
+
+    .tenis h3{
+        font-size: 2em;
+    }
+    .tenis p{
+        font-size: 1.5em;
+    }
+    .tenis button{
+        font-size: 1.5em;
+        padding: 20px;
+    }
+
+    footer{
+        margin-top: 160px;
+    }
+}
