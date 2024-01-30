@@ -150,7 +150,7 @@ footer{
     }
     
     #sobre p{
-        font-size: 1em;
+        font-size: 1.5em;
     }
 
     .produtos{
@@ -164,6 +164,17 @@ footer{
     }
     .tenis .carrinho:hover{
         background-color: white;
+    }
+
+    .tenis h3{
+        font-size: 2em;
+    }
+    .tenis p{
+        font-size: 1.5em;
+    }
+    .tenis button{
+        font-size: 1.5em;
+        padding: 20px;
     }
 
     footer{
